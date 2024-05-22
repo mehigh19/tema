@@ -2,26 +2,26 @@
     {
         "nume": "Tegler",
         "prenume": "Mihai",
-        "varsta": "25"
+        "varsta": 26
     },
     {
         "nume": "Bucur",
         "prenume": "Daniela",
-        "varsta": "50"
+        "varsta": 51
     },
     {
         "nume": "Pestritu",
         "prenume": "Elian",
-        "varsta": "20"
+        "varsta": 21
     },
     {
         "nume": "Tegler",
         "prenume": "Victor",
-        "varsta": "52"
+        "varsta": 53
     },
     {
         "nume": "Radu",
         "prenume": "Marius",
-        "varsta": "19"
+        "varsta": 20
     }
 ]

@@ -1,3 +1,4 @@
+import json
 import csv
 
 def fc_varstaCsv(csv_file):
@@ -11,4 +12,15 @@ def fc_varstaCsv(csv_file):
         writer.writeheader()
         writer.writerows(rows)
 
-fc_varstaCsv('output.csv')
+# fc_varstaCsv('output.csv')
+
+def fc_varstaJson(json_file):
+    with open(json_file,'r') as jsonFile:
+        data=json.load(jsonFile)
+        for persoana in data:
+            varsta=int(persoana['varsta'])
+            persoana['varsta']=varsta+1
+    with open(json_file,'w') as jsonFile:
+        json.dump(data,jsonFile)
+
+fc_varstaJson('input.json')
