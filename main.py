@@ -43,4 +43,18 @@ def fc_numarPersoane():
             list.append(row[1])
         return(len(list)-1)
     
-print(fc_numarPersoane())
+# print(fc_numarPersoane())
+
+def fc_tanar(json_file):
+    with open(json_file,'r') as Jsonfile:
+        data=json.load(Jsonfile)
+        varstaMinima=100
+        persoanaTanara=None
+        for persoana in data:
+            varsta=int(persoana['varsta'])
+            if (varsta < varstaMinima):
+                varstaMinima=varsta
+                persoanaTanara=persoana
+    return persoanaTanara
+    
+print(fc_tanar('input.json'))
