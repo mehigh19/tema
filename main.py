@@ -41,6 +41,7 @@ def fc_numarPersoane():
         list=[]
         for row in csv_reader:
             list.append(row[1])
-        return(len(list)-1)
+        x=(len(list)-1)
+        print(f'In fisier sunt inregistrate {x} persoane')
     
-print(fc_numarPersoane())
+fc_numarPersoane()
