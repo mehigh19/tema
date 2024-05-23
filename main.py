@@ -33,4 +33,15 @@ def JsonToCsv(input_file,output_file):
             writer.writeheader()
             writer.writerows(data)
 
-JsonToCsv('input.json','output.csv')
+# JsonToCsv('input.json','output.csv')
+
+def fc_numarPersoane():
+    with open('output.csv', 'r') as csv_file:
+        csv_reader=csv.reader(csv_file)
+        list=[]
+        for row in csv_reader:
+            list.append(row[1])
+        x=(len(list)-1)
+        print(f'In fisier sunt inregistrate {x} persoane')
+    
+fc_numarPersoane()
