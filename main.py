@@ -43,7 +43,7 @@ def fc_numarPersoane():
             list.append(row[1])
         x=(len(list)-1)
         print(f'In fisier sunt inregistrate {x} persoane')
-    
+   
 # fc_numarPersoane()
 
 def fc_tanar(json_file):
@@ -59,3 +59,6 @@ def fc_tanar(json_file):
     return persoanaTanara
     
 print(fc_tanar('input.json'))
+    
+fc_numarPersoane()
+
