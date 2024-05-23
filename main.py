@@ -1,4 +1,5 @@
 import json
+import csv
 
 def fc_persoane():
     lista=[]
@@ -21,4 +22,15 @@ def fc_json():
     with open('input.json','w') as file:
         json.dump(fc_persoane(),file)
 
-fc_json()
+# fc_json()
+
+def JsonToCsv(input_file,output_file):
+    with open(input_file,'r') as json_file:
+        data=json.load(json_file)
+        headers = data[0].keys()
+        with open(output_file, 'w', newline='') as csv_file:
+            writer = csv.DictWriter(csv_file, fieldnames=headers)
+            writer.writeheader()
+            writer.writerows(data)
+
+JsonToCsv('input.json','output.csv')
