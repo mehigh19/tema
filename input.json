@@ -1,0 +1,27 @@
+[
+    {
+        "nume": "Tegler",
+        "prenume": "Mihai",
+        "varsta": "25"
+    },
+    {
+        "nume": "Bucur",
+        "prenume": "Daniela",
+        "varsta": "50"
+    },
+    {
+        "nume": "Pestritu",
+        "prenume": "Elian",
+        "varsta": "20"
+    },
+    {
+        "nume": "Tegler",
+        "prenume": "Victor",
+        "varsta": "52"
+    },
+    {
+        "nume": "Radu",
+        "prenume": "Marius",
+        "varsta": "19"
+    }
+]
